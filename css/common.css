@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+label {
+  margin: 0;
+}
+
+p {
+  overflow-wrap: anywhere;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 360px;
+  height: 300px;
+}
+
+
+/* ----task1 */
+.item {
+  border-radius: 8px;
+  margin-top: 24px;
+  padding: 16px;
+  width: 392px;
+  background: #f6f6fe;
+}
+
+.item h2 {
+  font-family: var(--main-font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+
+.item ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item li {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding-top: 8px;
+  padding-left: 16px;
+}
+
+/* ----task2 */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 48px 24px;
+}
+
+/* ----task3 */
+h1 {
+  font-family: var(--main-font-family);
+  margin-top: 16px;
+  margin-left: 24px;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.name-input {
+  margin-top: 24px;
+  margin-left: 24px;
+  width: 360px;
+  height: 40px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #2e2f42;
+  padding-left: 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+
+/* ----task4 */
+.login-form {
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  height: 256px;
+  background: #fff;
+  margin-top: 24px;
+  margin-left: 24px;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--main-font-family);
+  line-height: 150%;
+  color: #2e2f42;
+}
+
+.login-form label {
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.login-form input {
+  margin: 8px 0;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+
+.btn-submit {
+  border: none;
+  margin-top: 8px;
+  background: #4e75ff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  font-family: var(--main-font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+/* ----task5 */
+.widget {
+  width: 169px;
+  margin: 24px 0 0 24px;
+  padding-left: 88px;
+  padding-top: 100px;
+  border-radius: 8px;
+  width: 345px;
+  height: 280px;
+  background: #fff;
+}
+
+.widget p {
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.change-color {
+  border: none;
+  margin: 16px auto;
+  background: #4e75ff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 148px;
+  height: 40px;
+  font-family: var(--main-font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+/* ----task6 */
+#controls {
+  margin-top: 24px;
+  margin-left: 24px;
+  background: #f6f6fe;
+  border-radius: 8px;
+  padding: 32px 0 32px 32px;
+  width: 486px;
+  height: 104px;
+}
+
+#controls input {
+  border: 1px solid #808080;
+  border-radius: 8px;
+  padding-left: 72px;
+  width: 150px;
+  height: 40px;
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+#controls button {
+  margin-left: 16px;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  font-family: var(--main-font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+button[data-create] {
+  background: #4e75ff;
+}
+
+button[data-destroy] {
+  background: #ff4e4e;
+}
+
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 44px;
+  margin-top: 16px;
+  margin-left: 24px;
+  border-radius: 8px;
+  padding-top: 32px;
+  padding-left: 32px;
+  width: 486px;
+  height: 134px;
+  background: #f6f6fe;
+}
